@@ -16,10 +16,8 @@ import os
 def ReadGrayLevelImage(F_name):
     """
     Reads an image, converts it to grayscale, and applies smoothing to reduce noise.
-    
     Parameters:
         F_name (str): Path to the image file.
-    
     Returns:
         np.ndarray: Preprocessed grayscale image.
     """

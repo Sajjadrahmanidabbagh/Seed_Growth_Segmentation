@@ -32,10 +32,8 @@ def ReadGrayLevelImage(F_name):
 def FindOtsuThreshold(I):
     """
     Computes the optimal threshold for binary segmentation using Otsu's method.
-
     Parameters:
         I (np.ndarray): Grayscale image.
-
     Returns:
         int: Optimal threshold value.
     """
@@ -46,11 +44,9 @@ def FindOtsuThreshold(I):
 def ThresholdImage(I, T_gray):
     """
     Converts the image into a binary format using a given threshold.
-
     Parameters:
         I (np.ndarray): Grayscale image.
         T_gray (int): Threshold value.
-
     Returns:
         np.ndarray: Binary thresholded image.
     """
@@ -74,11 +70,9 @@ def OuterDistanceTransform(bw):
 def IdentifySeeds(D, T_dist):
     """
     Identifies seed regions in the distance transform based on a distance threshold.
-
     Parameters:
         D (np.ndarray): Distance transform image.
         T_dist (float): Distance threshold.
-
     Returns:
         np.ndarray: Labeled seed regions.
     """
@@ -90,11 +84,9 @@ def IdentifySeeds(D, T_dist):
 def GrowSeeds(S_regions, D):
     """
     Expands seed regions to cover the entire objects.
-
     Parameters:
         S_regions (np.ndarray): Initial seed regions.
         D (np.ndarray): Distance transform image.
-
     Returns:
         np.ndarray: Grown seed regions (segmentation map).
     """
@@ -105,7 +97,6 @@ def GrowSeeds(S_regions, D):
 def DisplayResults(original, thresholded, distance, seeds, segmented):
     """
     Displays the original, thresholded, distance transform, and segmented images.
-
     Parameters:
         original (np.ndarray): Original grayscale image.
         thresholded (np.ndarray): Binary thresholded image.
@@ -126,11 +117,9 @@ def DisplayResults(original, thresholded, distance, seeds, segmented):
 def SegmentObjects(F_name, T_dist):
     """
     Segments objects in a grayscale image using Otsu's thresholding and distance transform.
-
     Parameters:
         F_name (str): Path to the image file.
         T_dist (float): Distance threshold for seed identification.
-
     Returns:
         None
     """

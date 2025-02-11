@@ -56,10 +56,8 @@ def ThresholdImage(I, T_gray):
 def OuterDistanceTransform(bw):
     """
     Computes the distance transform of a binary image.
-
     Parameters:
         bw (np.ndarray): Binary image.
-
     Returns:
         np.ndarray: Distance transform image.
     """

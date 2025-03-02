@@ -117,7 +117,7 @@ def SegmentObjects(F_name, T_dist):
         F_name (str): Path to the image file.
         T_dist (float): Distance threshold for seed identification.
     Returns:
-        None
+        Non
     """
     I = ReadGrayLevelImage(F_name)
     T_gray = FindOtsuThreshold(I)

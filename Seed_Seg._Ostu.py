@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jun  14 18:01:41 2023 
+Created on Sat Jun  14 2023 
 @author: Sajjad
 """
 # Import necessary libraries

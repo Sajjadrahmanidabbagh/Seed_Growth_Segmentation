@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Created on Jun  14 2023 
 @author: Sajjad

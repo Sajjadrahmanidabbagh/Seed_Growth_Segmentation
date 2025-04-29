@@ -1,6 +1,6 @@
 """
 Created on Jun 2023 
-@author: Sajjad
+author: Sajjad
 """
 # Import necessary libraries
 import cv2

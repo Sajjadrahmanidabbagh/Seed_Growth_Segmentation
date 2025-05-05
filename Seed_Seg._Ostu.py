@@ -21,7 +21,7 @@ def ReadGrayLevelImage(F_name):
         raise FileNotFoundError(f"Image file '{F_name}' not found.")
     I = cv2.imread(F_name)
     I = cv2.cvtColor(I, cv2.COLOR_BGR2GRAY)  # Convert to grayscale
-    I = cv2.GaussianBlur(I, (11, 11), 0)    # Apply Gaussian blur to reduce noise
+    I = cv2.GaussianBlur(I, (11, 11), 0)   # Apply Gaussian blur to reduce noise
     return I
 
 # Function to compute Otsu's threshold
